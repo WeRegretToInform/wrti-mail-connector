@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Privacy Policy</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Privacy Policy</h1>
+</header>
+<h1 id="privacy-policy">Privacy Policy</h1>
+<p><strong>App:</strong> We Regret To Inform, the Gmail connector of
+WRTI, a personal job-search tool (the “app”). <strong>Effective
+date:</strong> 2026-09-27 <strong>Contact:</strong>
+we-regret-to-inform@googlegroups.com · New Zealand · <a
+href="https://weregrettoinform.github.io/wrti-mail-connector/">Home
+page</a></p>
+<p>The app is a Windows desktop tool that runs on your own computer. It
+is made by an individual developer (the “developer”) for their own use
+and for a few people they know personally.</p>
+<h2 id="google-user-data-the-app-accesses">Google user data the app
+accesses</h2>
+<p>The app asks Google for one permission: read-only access to your
+Gmail (<code>https://www.googleapis.com/auth/gmail.readonly</code>,
+which Google describes as “View your email messages and settings”). It
+cannot send, delete, move or change email.</p>
+<p>Using the open-source Google Workspace CLI (<code>gws</code>) on your
+computer, the app searches your mailbox for messages from job sites,
+employers, recruiters and applicant-tracking systems, and reads those
+messages.</p>
+<h2 id="how-it-is-used">How it is used</h2>
+<p>Only to find replies to your job applications and mark each
+application’s status (for example “replied” or “rejected”) in the
+tracker on your computer. It is not used for advertising, profiling,
+credit or lending decisions, or any other purpose.</p>
+<h2 id="where-it-is-stored">Where it is stored</h2>
+<p>Everything stays on your computer:</p>
+<ul>
+<li>The Google access token is stored by <code>gws</code> in its own
+folder on your computer, encrypted at rest (AES-256-GCM); the encryption
+key is kept in the Windows credential store of your user account.</li>
+<li>The app’s data folder holds the IDs of messages already reviewed,
+the sender, subject and date of matched messages, the status derived
+from them, and temporary working files created during a check.</li>
+</ul>
+<p>The developer runs no server and receives no data from you. The
+developer never reads your mail and has no access to it. The app has no
+user accounts, cookies or analytics. Besides your own Gmail requests,
+<code>gws</code> downloads Google’s public API descriptions (the
+Discovery Service) to build its commands; no user data is involved in
+that.</p>
+<h2 id="sharing">Sharing</h2>
+<p>Your Google user data is not sold, shared or transferred to anyone,
+with one exception that you control: the optional AI step below.</p>
+<h2 id="optional-ai-step-off-by-default">Optional AI step (off by
+default)</h2>
+<p>If you turn it on, the app sends the text of a matched message to the
+AI provider you choose, Anthropic (Claude) or Google (Gemini), through
+that provider’s command-line tool and your own account with that
+provider, to summarise or classify that message. Only matched messages
+are sent, never your whole mailbox. The provider handles that text under
+your own agreement with it; nothing goes to the developer. Before
+turning this on, check your provider account’s settings on whether your
+inputs may be used to train its models.</p>
+<h2 id="ai-and-machine-learning">AI and machine learning</h2>
+<p>Data obtained through Google Workspace APIs, including Gmail, is not
+used to develop, improve or train generalised or non-personalised AI or
+machine-learning models.</p>
+<h2 id="retention-and-deletion">Retention and deletion</h2>
+<p>Local data stays on your computer until you delete it. To delete it,
+run <code>gws auth logout</code> (this clears the saved credentials and
+token cache) and delete the app’s data folder. To stop all access,
+revoke it at <a
+href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>;
+the stored token then no longer works. You can do all of this at any
+time without contacting anyone.</p>
+<h2 id="security">Security</h2>
+<p>Your data is protected by your Windows user account and the Windows
+credential store. Keep your computer and account secure.</p>
+<h2 id="google-api-services-user-data-policy">Google API Services User
+Data Policy</h2>
+<p>The app’s use and transfer to any other app of information received
+from Google APIs will adhere to the <a
+href="https://developers.google.com/terms/api-services-user-data-policy">Google
+API Services User Data Policy</a>, including the Limited Use
+requirements.</p>
+<p>The use of information received from Google Workspace APIs will
+adhere to the <a
+href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">Google
+Workspace API User Data and Developer Policy</a>, including the Limited
+Use requirements.</p>
+<h2 id="children">Children</h2>
+<p>The app is not intended for children and does not knowingly process
+children’s data.</p>
+<h2 id="changes">Changes</h2>
+<p>Any change to this policy will be posted on this page with a new
+effective date.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions or requests: we-regret-to-inform@googlegroups.com. The
+developer is based in New Zealand.</p>
+</body>
+</html>
